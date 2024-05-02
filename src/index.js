@@ -1,13 +1,10 @@
-import generateJoke from "./generateJoke.js"
-import './styles/main.scss'
-import laughing from './assets/laughing.svg'
+import "./styles/style.css";
+const name = "James";
 
-const laughImg = document.getElementById('laughImg');
-laughImg.src = laughing;
-console.log(generateJoke());
+const person = { first: name };
 
-const jokeBtn = document.getElementById('jokeBtn');
-jokeBtn.addEventListener('click', generateJoke);
+console.log(person);
 
-generateJoke();
-
+const sayHelloLinting = (fName) => {
+  console.log(`Hello linting, ${fName}`);
+};
